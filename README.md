@@ -1,1 +1,5 @@
 # just
+
+``` npm install ```
+
+``` gulp ```
