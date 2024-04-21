@@ -1,5 +1,0 @@
-# just
-
-``` npm install ```
-
-``` gulp ```
