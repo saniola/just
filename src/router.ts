@@ -4,12 +4,13 @@ import Portfolio from './views/portfolio.vue';
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/portfolio', component: Portfolio }
-]
+  { path: '/portfolio', component: Portfolio },
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-export default router
+export default router;
+
