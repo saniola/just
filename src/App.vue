@@ -1,9 +1,9 @@
 <template>
-  <header />
+  <Header />
 
   <router-view />
 
-  <footer />
+  <Footer />
 </template>
 
 <script setup>
