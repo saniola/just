@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const title = ref('Hello, World!');
+const title = ref('Footer');
 
 </script>
 

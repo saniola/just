@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from './views/home.vue';
-import Portfolio from './views/portfolio.vue';
+import Home from './views/Home.vue';
+import Portfolio from './views/Portfolio.vue';
 
 const routes = [
   { path: '/', component: Home },
