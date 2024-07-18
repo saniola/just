@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Development - Portfolio</title>
+    <meta name="description" content="Web Development Company Websit Portfolio" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/just/assets/apple-touch-icon-8c0a34a1.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA7VJREFUWEftVkko9W8YPZfIUOZkWJAMGSJKMmXaKhELG1Y2UkqGRIoylyhRVkIZkiELIQulTJkyJKXMmed5/Heeuvf/+e79cvWNi/tu7r2/33vf97znOec8r+L9/f0df3EodAB0DHzLwMnJCebn51WS9PT0xObmJh4fHxETE6N6fnR0hMXFRTg5OcHd3R1vb2+YmZnB1dXVp3I2NTVFSEiIat4HEQ4ODiIuLk71sqGhAdXV1djf38f19bXqeX9/P5KSkpCVlYWSkhLEx8djZGTk0805wcvLCwsLC78OgIODA7Kzs7Xa/FMAu7u7GB0dldN0dXVBGwbGx8cxPT2N9PR0+Pr6qgEpLy/H1tYWamtrYWRkBAsLCyQkJGhmQPm0rq4OOTk5WgFoa2vD7e0tTk9PoaenpwYgODgYs7OzoL7MzMzU3msMoq8A6O3tlRMuLS3Bzc3tzwM4Pj5Ga2srDA0NQYUrFAr4+fmhqalJXPLbGUhJSZFN7u/vP5yeIKamphAaGvrzJdjb28PNzY1GG1ZUVGBiYgI1NTW4vLwEe9vk5KRkx/DwMPLz878OoKCgQPzf3NyMyspKrK2t4fDwUBTMQXozMjJQVFSEwsJCtbqXlpaiuLgYVVVV6Ozs/BoApllAQAC2t7fFXlyku7sbZWVl4vfn52dERkZK8nV0dHywlBIJLZebmwtakP/VygVcsL6+Xiavr6/D1dUVKysr6OnpQXJyMvT19SUlGc1zc3NiKX7nfGaGcjCW+/r6xJZMTCYl51CsZMvOzg5kWDlUNmSgREdHy3MqmYtyw9fXV0RFRUldvx0sUWZmJhobG+Xz++Hs7Izl5WVEREQIAPYPW1vbH0cxhURqraysQGGlpqaq1mSIpKWlgb3CxMRE6M3LyxOgmgBwc5aHpVTa8FMA3I1KNzY2Fro1DSYe/W5gYKB6/fDwgLu7u/8pVShgbm6uSkVq6uXlBZaWljg/P5e1+V6tBFp3k1888d+5E5KmlpYWqRkpZc1cXFxEvbx8MNm8vb3FIeya7GwbGxsiLGohKChIcuLp6QlDQ0Pw8fERutkneGnhs8DAQFhbW8tvtRLQWrQiBccLCO1EUXIRfmebpq/HxsYk+agFZgI7IMFx47CwMOzs7Ehw8dLB3sCDxMbGyn4HBwfw9/dHeHi4OgAywPRKTEwUMVJoq6ur8gcqn6fkqXn6i4sLYaq9vR02NjYCwt7eXiw2MDAgv2nds7Mzmcu88PDwECFyDUdHR50IdQzoGPh3GPgP4VPIv7BlEVQAAAAASUVORK5CYII=" />
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAbJJREFUOE+tkzvIAVAUx//eA3mFUEomZbKZrUxsLCYMjEaZDCZFyqBEIgZZDcriVVYiMchjUDJQXvF1j+nLV9/A3e459/7O+Z//vZzn8/nEB4vzFcDtdsNyuYRYLMb5fIbRaMT1esVut4Ner6fc/X7/1adKpYJMJgN1MJvNYLFY4HA4MBgMsNlsMJlMEAgEYLPZkEwm30SmUikEg8EX4HK5oFaroV6vvwHm8zkqlQokEglBnE4nnTOZTFCr1S8AS/T7fSQSiTfAdruFx+OBVquFz+eD2WzGdDqFSCQi4L+AUCiEWCyG/X4Pv9+PYrH4N6BUKqHVaqHT6aDZbGI0GiGXy6HRaFAlFo/H4xiPx++AaDSKdDqNcrmMbreLfD5PbrDYcDhEr9cjR9xuN6rVKiKRCElie5LAqjweD7hcLjBLs9kslEolvF4vCoUCVWRDDIfDyGQysFqtZCFz6DsPqd1uY71eg8fjgc/nQ6PR0J45IJVKqRJ7GywmFAppJna7HTqd7tXBYrEgW06nExQKBQQCAQ6HA7hcLo7HI+ldrVYwGAw0C7lcThLYne9I+OAzft7BD6jNF+AvAqxdAAAAAElFTkSuQmCC" />
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=" />
+    <link rel="icon" href="/just/assets/favicon-6d1c7058.ico" type="image/x-icon" />
+
+    
+    <script type="module" crossorigin src="/just/assets/vendor-e860c0f3.js"></script>
+    <script type="module" crossorigin src="/just/assets/main-46c5ed8f.js"></script>
+    <link rel="stylesheet" href="/just/assets/main-95971a62.css">
+    <link rel="stylesheet" href="/just/assets/vendor-e5212ee8.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header-wrapper">
+      <a href="./index.html" aria-label="logo">
+        <svg class="header-logo" width="100" height="50">
+          <use href="/just/assets/icons-f2a33b31.svg#logo"></use>
+        </svg>
+      </a>
+
+      <nav class="nav">
+        <ul class="toggle-container">
+          <li class="toggle-btn toggle-btn-home">
+            <a href="./index.html" class="nav-link toggle-btn-home" aria-label="home button">Home</a>
+          </li>
+          <li class="toggle-btn toggle-btn-portfolio">
+            <a href="./portfolio.html" class="nav-link toggle-btn-portfolio" aria-label="portfolio button">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+      <ul class="social">
+  <li>
+    <a
+      href="https://www.upwork.com/agencies/1170967194815528960/"
+      target="_blank"
+      class="social-link"
+      aria-label="upwork"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#upwork"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.linkedin.com/company/102075082"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#linkedin"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/just.dev.co/"
+      target="_blank"
+      class="social-link"
+      aria-label="facebook"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.instagram.com/_just_development_/ "
+      target="_blank"
+      class="social-link"
+      aria-label="instagram"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#instagram"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://github.com/just-development"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#github"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://clutch.co/profile/just-development"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#clutch"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+    </div>
+  </div>
+</header>
+
+
+    <main class="content container"></main>
+
+    <footer class="footer">
+  <div class="footer-container container">
+    <div class="footer-left">
+      <a href="./index.html" aria-label="logo" class="footer-brand-name">
+        <svg width="100" height="50" class="footer-logo">
+          <use href="/just/assets/icons-f2a33b31.svg#logo"></use>
+        </svg>
+      </a>
+
+      <ul class="social">
+  <li>
+    <a
+      href="https://www.upwork.com/agencies/1170967194815528960/"
+      target="_blank"
+      class="social-link"
+      aria-label="upwork"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#upwork"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.linkedin.com/company/102075082"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#linkedin"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/just.dev.co/"
+      target="_blank"
+      class="social-link"
+      aria-label="facebook"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.instagram.com/_just_development_/ "
+      target="_blank"
+      class="social-link"
+      aria-label="instagram"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#instagram"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://github.com/just-development"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#github"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://clutch.co/profile/just-development"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#clutch"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div class="footer-right">
+      <h2 class="footer-title">Transforming <span>ideas</span> into digital reality</h2>
+
+      <form class="footer-form">
+        <h3 class="form-header">Have Questions? Email Us and We'll Answer Quickly!</h3>
+        <input class="footer-form-input" type="email" placeholder="Email" />
+
+        <button class="footer-form-button" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="footer-copyright">
+      <p class="footer-copyright-item">Just Development. All rights reserved.</p>
+
+      <p class="footer-copyright-item"><a href="#">Privacy Policy</a>&nbsp;/&nbsp;<a href="#">Terms of Service</a></p>
+
+      <p class="footer-copyright-item">&copy; 2024</p>
+    </div>
+  </div>
+</footer>
+
+    <div class="overlay hidden js-mobile-overlay" id="overlay">
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu" aria-label="Close menu">
+      <span class="icon-x"></span>
+    </button>
+
+    <ul class="menu-nav-container js-menu-link">
+      <li class="menu-nav-item">
+        <a href="./index.html" class="menu-nav-link" aria-label="home button">Home</a>
+      </li>
+      <li class="menu-nav-item">
+        <a href="./portfolio.html" class="menu-nav-link" aria-label="portfolio button">Portfolio</a>
+      </li>
+    </ul>
+
+    <ul class="social">
+  <li>
+    <a
+      href="https://www.upwork.com/agencies/1170967194815528960/"
+      target="_blank"
+      class="social-link"
+      aria-label="upwork"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#upwork"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.linkedin.com/company/102075082"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#linkedin"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.facebook.com/just.dev.co/"
+      target="_blank"
+      class="social-link"
+      aria-label="facebook"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.instagram.com/_just_development_/ "
+      target="_blank"
+      class="social-link"
+      aria-label="instagram"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#instagram"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://github.com/just-development"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#github"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://clutch.co/profile/just-development"
+      target="_blank"
+      class="social-link"
+      aria-label="linkedIn"
+      rel="noopener noreferrer external"
+    >
+      <svg class="social-icon" width="28" height="28">
+        <use href="/just/assets/icons-f2a33b31.svg#clutch"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+  </div>
+</div>
+
+    <div class="scroll-to-top">
+  <div class="scroll-icon-wrapper">
+    <span class="scroll-icon icon-arrow-up"></span>
+  </div>
+</div>
+
+
+    
+  </body>
+</html>
