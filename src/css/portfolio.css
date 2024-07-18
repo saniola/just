@@ -1,0 +1,155 @@
+.portfolio {
+  padding-top: 90px;
+}
+
+.portfolio .main-layout {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 40px;
+}
+
+.portfolio .daily-sport-section {
+  margin-top: 0;
+}
+
+.portfolio .quote-img-favorite-mobile {
+  display: block;
+}
+
+.portfolio .quote-img-mobile,
+.quote-img-favorite-desk,
+.quote-img-favorite-tab {
+  display: none;
+}
+
+.portfolio .photo {
+  grid-column: 1;
+  grid-row: 3;
+  order: 3;
+}
+
+.portfolio .daily-excercise {
+  grid-column: 1;
+  grid-row: 2;
+  order: 2;
+  height: auto;
+  flex-direction: column;
+}
+
+.portfolio .daily-excercise .circle-icon {
+  background-color: transparent;
+  color: var(--primary-dark-color);
+  font-size: 20px;
+  padding: 0;
+}
+
+.portfolio .daily-excercise .excercise-title {
+  margin-bottom: 6px;
+}
+
+.portfolio .daily-excercise .excercise-text {
+  display: none;
+}
+.portfolio .excercise-sub {
+  margin-bottom: 0;
+}
+
+.portfolio .excercise-sub {
+  margin-bottom: 0;
+}
+
+.portfolio .empty {
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 554px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .daily-sport-section {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
+  }
+
+  .portfolio .quote-img-favorite-tab {
+    display: block;
+  }
+
+  .portfolio .quote-img-tab,
+  .portfolio .quote-img-favorite-desk,
+  .portfolio .quote-img-favorite-mobile {
+    display: none;
+  }
+
+  .portfolio .quote {
+    grid-column: 1 / -1;
+  }
+
+  .portfolio .photo {
+    grid-column: 2;
+    grid-row: 2;
+    order: 3;
+    max-height: 200px;
+    width: 100%;
+  }
+
+  .portfolio .daily-excercise {
+    grid-column: 1;
+    grid-row: 2;
+    order: 2;
+    padding: 25px;
+  }
+
+  .portfolio .content {
+    margin-bottom: 0;
+  }
+
+  .portfolio .empty {
+    font-size: 18px;
+    padding: 92px 0 185px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .portfolio .main-layout {
+    flex-direction: row-reverse;
+  }
+
+  .portfolio .daily-sport-section {
+    column-gap: 16px;
+    width: 494px;
+  }
+
+  .portfolio .quote-img-favorite-desk {
+    display: block;
+  }
+
+  .portfolio .quote-img-desk,
+  .portfolio .quote-img-favorite-mobile,
+  .portfolio .quote-img-favorite-tab {
+    display: none;
+  }
+
+  .portfolio .content {
+    height: 100%;
+    max-height: 670px;
+    overflow-y: scroll;
+  }
+
+  .portfolio .empty {
+    height: 100%;
+    padding-top: 115px;
+  }
+
+  .portfolio .content-wrap {
+    max-width: 850px;
+  }
+
+  .portfolio .exercises-container {
+    max-width: 404px;
+  }
+
+  .portfolio .exercises-info-value.target {
+    max-width: 48px;
+  }
+}
