@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   refs.openModalBtnArray.forEach(btn => {
     console.log('btn1', btn); // eslint-disable-line
     btn.addEventListener('click', toggleModal);
-  })
+  });
   refs.closeModalBtnArray.forEach(btn => {
     console.log('btn', btn); // eslint-disable-line
     btn.addEventListener('click', toggleModal);
