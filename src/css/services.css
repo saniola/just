@@ -1,0 +1,114 @@
+.team,
+.services,
+.customers,
+.portfolio-index  {
+  padding: 96px 0;
+}
+
+.services-list,
+.portfolio-list,
+.team-list {
+  gap: 72px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-page-list.portfolio-list {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-title,
+.portfolio-title,
+.team-title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.service-title,
+.portfolio-name {
+  color: var(--primary-dark-color, #242424);
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.service-text,
+.portfolio-item-text {
+  color: var(--border-color);
+  font-size: 20px;
+}
+
+.service-icon {
+  border-radius: 16px;
+  padding: 12px 0;
+  text-align: center;
+  background-color: var(--white);
+  margin: 0 0 12px;
+}
+
+.portfolio-title,
+.team-title {
+  color: var(--primary-dark-color);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.11111;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: baseline;
+}
+
+.portfolio-index {
+  background-color: var(--white);
+}
+
+.portfolio-item-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.portfolio-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.11111;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .service-icon {
+    padding: 24px 0;
+  }
+
+  .services-list,
+  .portfolio-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team,
+  .services,
+  .customers,
+  .portfolio-index {
+    padding: 120px 0;
+  }
+}

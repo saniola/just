@@ -1,0 +1,40 @@
+<div class="modal-overlay is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="close-button" data-modal-close>
+      <span class="icon-x"></span>
+    </button>
+
+    <form action="/some-action" method="post" class="contact-form">
+      <p class="modal-title">
+        Leave your contacts and we will reach you out
+      </p>
+
+      <label for="name" class="contact-form-label">
+        Name
+        <input type="text" id="name" name="name" required />
+        <svg width="24" height="24" class="form-icon">
+          <use href="./images/icons.svg#person"></use>
+        </svg>
+      </label>
+
+      <label for="email" class="contact-form-label">
+        Email
+        <input type="email" id="email" name="email" required />
+        <svg width="24" height="24" class="form-icon">
+          <use href="./images/icons.svg#email"></use>
+        </svg>
+      </label>
+
+      <label for="comment" class="contact-form-label">
+        Comment
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Text input"
+        ></textarea>
+      </label>
+
+      <button type="submit" class="action-button">Send</button>
+    </form>
+  </div>
+</div>
