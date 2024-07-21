@@ -3,14 +3,18 @@
   max-width: 392px;
   border-radius: 4px;
   background: var(--primary-light-color);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow:
+    0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: relative;
-  transition: opacity 1s, transform 1s;
+  transition:
+    opacity 1s,
+    transform 1s;
   padding: 72px 24px 24px;
 }
 
@@ -22,7 +26,9 @@
   width: 100%;
   background: var(--modal-overlay-color);
   opacity: 1;
-  transition: opacity 1s, transform 1s;
+  transition:
+    opacity 1s,
+    transform 1s;
   z-index: 3;
 }
 
