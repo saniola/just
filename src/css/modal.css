@@ -1,0 +1,143 @@
+.modal {
+  width: 100%;
+  max-width: 392px;
+  border-radius: 4px;
+  background: var(--primary-light-color);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  transition: opacity 1s, transform 1s;
+  padding: 72px 24px 24px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--modal-overlay-color);
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+  z-index: 3;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.is-hidden .modal-overlay {
+  opacity: 0;
+}
+
+.is-hidden .modal {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.subscribe-email {
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  height: 40px;
+  color: var(--white, #fff);
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.subscribe-email::placeholder {
+  color: var(--white, #fff);
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+}
+
+.modal-title {
+  color: var(--navy-blue, #2e2f42);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.contact-form-label {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 8px;
+  color: var(--light-slate, #8e8f99);
+}
+
+.contact-form-label:last-of-type {
+  margin-bottom: 16px;
+}
+
+.contact-form-label input,
+.contact-form-label textarea {
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--navy-blue-modal, rgba(46, 47, 66, 0.4));
+  flex-shrink: 0;
+  transition: border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  background-color: var(--primary-light-color);
+}
+
+.contact-form-label input {
+  height: 40px;
+  padding-left: 38px;
+}
+
+.contact-form-label textarea {
+  height: 120px;
+  resize: none;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  fill: var(--navy);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-label input:focus,
+.contact-form-label textarea:focus {
+  border-color: var(--iris, #4d5ae5);
+}
+
+.contact-form-label input:focus + .form-icon {
+  fill: var(--iris);
+}

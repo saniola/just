@@ -3,8 +3,8 @@
   z-index: 10;
   bottom: 40px;
   right: 40px;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   display: none;
   background-color: var(--primary-dark-color);
   justify-content: center;
@@ -26,22 +26,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .scroll-to-top {
-    width: 60px;
-    height: 60px;
-  }
-
   .scroll-icon {
     font-size: 24px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .scroll-to-top {
-    width: 100px;
-    height: 100px;
-  }
-
   .scroll-icon {
     font-size: 33px;
   }

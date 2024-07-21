@@ -2,6 +2,10 @@
   padding-top: 90px;
 }
 
+.portfolio-container {
+  padding-bottom: 96px;
+}
+
 .portfolio .main-layout {
   display: flex;
   flex-direction: column-reverse;
@@ -100,19 +104,73 @@
     padding: 25px;
   }
 
-  .portfolio .content {
-    margin-bottom: 0;
-  }
-
   .portfolio .empty {
     font-size: 18px;
     padding: 92px 0 185px 0;
   }
 }
 
+
+.portfolio-card {
+  border: 1px solid var(--border-color);
+  max-width: 356px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: var(--overlay-category-color);
+  padding: 32px 40px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card:hover .portfolio-overlay,
+.portfolio-card:focus .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-overlay p {
+  color: var(--primary-light-color);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-info {
+  padding: 32px 16px;
+  z-index: 1;
+}
+
+.portfolio-name {
+  font-size: 20px;
+  text-align: left;
+  color: var(--primary-dark-color);
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
 @media screen and (min-width: 1440px) {
   .portfolio .main-layout {
     flex-direction: row-reverse;
+  }
+
+  .portfolio-container {
+    padding-bottom: 120px;
   }
 
   .portfolio .daily-sport-section {
@@ -128,17 +186,6 @@
   .portfolio .quote-img-favorite-mobile,
   .portfolio .quote-img-favorite-tab {
     display: none;
-  }
-
-  .portfolio .content {
-    height: 100%;
-    max-height: 670px;
-    overflow-y: scroll;
-  }
-
-  .portfolio .empty {
-    height: 100%;
-    padding-top: 115px;
   }
 
   .portfolio .content-wrap {

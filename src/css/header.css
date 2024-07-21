@@ -1,6 +1,5 @@
 .header {
-  padding-top: 20px;
-  display: block; /* placeholder */
+  padding: 20px 0;
 }
 
 .header-wrapper {
@@ -83,6 +82,7 @@
 }
 
 .toggle-btn {
+  padding: 6px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,18 +96,6 @@
   gap: 10px;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.toggle-btn-home {
-  padding: 6px 12px;
-  width: 68px;
-  height: 36px;
-}
-
-.toggle-btn-portfolio {
-  padding: 6px 12px;
-  width: 91px;
-  height: 36px;
 }
 
 .toggle-btn.active {
@@ -153,7 +141,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 24px;
+    padding: 24px 0;
   }
 
   .header .social {
@@ -175,8 +163,6 @@
   .header-wrapper {
     gap: 12px;
   }
-
-
 }
 
 @media screen and (min-width: 1440px) {

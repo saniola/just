@@ -1,0 +1,31 @@
+.portfolio-group-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 72px;
+}
+
+.portfolio-group {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px 24px;
+  background: var(--primary-dark-color);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--primary-light-color);
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-group.active,
+.portfolio-group:hover,
+.portfolio-group:focus {
+  background: var(--primary-light-color);
+  color: var(--primary-dark-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}
